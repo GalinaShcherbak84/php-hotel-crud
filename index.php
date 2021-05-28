@@ -12,12 +12,12 @@
 </head>
 <body>
     <main class="container">
-        <h1 class="my-4">Stanze</h1>
+        <h1 class="my-4">Rooms</h1>
         <table class="table">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Numero stanza</th>
+                    <th>Room number</th>
                     <th></th>
                 </tr>
             </thead>
