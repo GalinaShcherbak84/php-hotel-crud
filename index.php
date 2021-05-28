@@ -13,6 +13,33 @@
 <body>
     <main class="container">
         <h1 class="my-4">Stanze</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Numero stanza</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php // loop DB records
+                    if(!empty($rooms)){
+                        foreach($rooms as $room){ ?>
+                          <tr>
+                            <td><?php echo $room['id']; ?></td>
+                            <td><?php echo $room['room_number']; ?></td>
+                            <td>
+                                <a class="text-success" 
+                                href="./show.php?id=<?php echo $room['id']; ?>">
+                                    View
+                                </a>
+                            </td>
+                          </tr>  
+                      <?php  }
+                    }
+                ?>
+            </tbody>
+        </table>
     </main>
 </body>
 </html>
